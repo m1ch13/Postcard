@@ -56,12 +56,13 @@
                         <viewControllerLayoutGuide type="bottom" id="Sh2-pz-pW9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5o5-YB-0h8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ahf-dE-bhH">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="255" y="153" width="100" height="80"/>
+                                    <rect key="frame" x="255" y="232" width="100" height="80"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sWZ-x6-4yI">
@@ -69,7 +70,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="44" y="246" width="312" height="30"/>
+                                    <rect key="frame" x="44" y="325" width="312" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9P-RC-o4I">
@@ -81,7 +82,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="43" y="203" width="204" height="30"/>
+                                    <rect key="frame" x="43" y="282" width="204" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="nBB-h1-i2L" eventType="touchUpInside" id="hC7-iw-fbq"/>
@@ -101,9 +102,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="43" y="285" width="312" height="30"/>
+                                    <rect key="frame" x="43" y="364" width="312" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWS-zn-ldE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="43" y="164" width="312" height="55"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +123,7 @@
                                 <exclude reference="j9P-RC-o4I"/>
                                 <exclude reference="2rD-rk-reO"/>
                                 <exclude reference="x0a-03-YxV"/>
+                                <exclude reference="EWS-zn-ldE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +133,7 @@
                                 <include reference="j9P-RC-o4I"/>
                                 <include reference="2rD-rk-reO"/>
                                 <include reference="x0a-03-YxV"/>
+                                <include reference="EWS-zn-ldE"/>
                             </mask>
                         </variation>
                     </view>
@@ -130,6 +142,7 @@
                         <outlet property="enterNameTextField" destination="sWZ-x6-4yI" id="T43-rp-0iC"/>
                         <outlet property="mailButton" destination="j9P-RC-o4I" id="0sw-dz-JHn"/>
                         <outlet property="messageLabel" destination="2rD-rk-reO" id="RHb-32-sgH"/>
+                        <outlet property="nameLabel" destination="EWS-zn-ldE" id="LD8-Ji-w60"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dg-LJ-ppp" userLabel="First Responder" sceneMemberID="firstResponder"/>
